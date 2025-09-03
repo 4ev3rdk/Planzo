@@ -32,8 +32,10 @@ const MarketingPage = () => {
             Collaborate,Manage Project and reach new Productivity peeks. From high rises to home office, the way yout team works is unique - accomplish all with Planzo
         </div>
         <Button className="mt-4" size="lg" asChild >
-            <Link href="/Sign_up">Get Planzo Free</Link>
+            <Link href="/sign-up">Get Planzo Free</Link>
         </Button>
+
+
     </div >
     );
 };

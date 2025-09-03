@@ -11,12 +11,12 @@ export const Navbar = () => {
 
                 <div className="space-x-4 md:block md:w-auto flex items-center justify-between w-full">
                     <Button size="sm" variant="outline" asChild>
-                        <Link href="/Sign-in">
+                        <Link href="/sign-in">
                             Log in
                         </Link></Button>
 
                     <Button size="sm" asChild>
-                        <Link href="/Sign-Up">
+                        <Link href="/sign-up">
 
                             Get Planzo for free
                         </Link></Button>
