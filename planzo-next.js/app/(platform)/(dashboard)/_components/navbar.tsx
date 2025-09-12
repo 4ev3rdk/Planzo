@@ -2,11 +2,13 @@ import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { Plus } from "lucide-react";
+import { MobileSidebar } from "./mobile-sidebar";
 
 const DashboardNavbar = () => {
     return (
-        <nav className="top-0 border-b shadow-sm h-14 bg-white flex  items-center fixed z-50 px-4 w-full">
-
+        <nav className="top-0 border-b shadow-sm h-14 bg-white flex  items-center fixed z-50 px-4 w-full ">
+            {/*Mobile Sidebar */}
+            <MobileSidebar />
             <div className=" flex items-center gap-x-4">
 
                 <div className="hidden md:flex"> <Logo /> </div>
@@ -20,7 +22,7 @@ const DashboardNavbar = () => {
                 </div>
 
             </div>
-            <div className="ml-auto flex items-center gap-x-2">
+            <div className="ml-auto flex items-center gap-x-2 ">
                 <OrganizationSwitcher
                     afterCreateOrganizationUrl="/organization/:id"
                     afterLeaveOrganizationUrl="/select-org"
